@@ -8,6 +8,10 @@ description: |
 
 base: core22 # the base snap is the execution environment for this snap
 
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+
 confinement: devmode # use 'strict' once you have the right plugs and slots
 
 parts:
